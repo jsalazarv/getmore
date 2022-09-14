@@ -1,10 +1,12 @@
 import './App.scss';
+import { Banner } from './components/Banner';
+import bannerTop from './assets/images/home/banner/banner.webp';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Getmore</h1>
-    </div>
+    <>
+      <Banner image={bannerTop} />
+    </>
   );
 }
 
