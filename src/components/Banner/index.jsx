@@ -5,7 +5,7 @@ export const Banner = ({ className, image = '', children }) => {
     <div
       className={`banner ${className}`}
       style={{ backgroundImage: `url(${image})` }}>
-      {children}
+      <div className="banner__content">{children}</div>
     </div>
   );
 };
