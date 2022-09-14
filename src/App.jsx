@@ -1,9 +1,9 @@
-import './App.css';
+import './App.scss';
 
 function App() {
   return (
     <div className="App">
-      <h1>React Boilerplate</h1>
+      <h1>Getmore</h1>
     </div>
   );
 }
