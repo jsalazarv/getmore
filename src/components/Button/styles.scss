@@ -1,8 +1,10 @@
+@import "src/styles/vars/colors/colors";
+
 .button {
   height: 45px;
   min-width: 92px;
   padding: 0 35px;
-  background-color: #f5f5f5;
+  background-color: $white;
   font-weight: 600;
   letter-spacing: .0892857143em;
   text-transform: uppercase;

@@ -1,0 +1,33 @@
+@import "src/styles/vars/colors/colors";
+@import "src/styles/mixins/typography/_headlines.scss";
+
+.home {
+  .banner-top {
+    color: $white;
+    .banner-top__title {
+      @include headline-4;
+    }
+    .banner-top__paragraph {
+      @include headline-6;
+    }
+   .banner-top__button {
+     background-color: $primary;
+     color: $white;
+     margin-top: 2.5rem;
+   }
+  }
+}
+
+@media (min-width: 992px) {
+  .home {
+    .banner-top {
+      height: 75vh;
+      .banner-top__title {
+        @include headline-1;
+      }
+      .banner-top__paragraph {
+        @include headline-6;
+      }
+    }
+  }
+}
