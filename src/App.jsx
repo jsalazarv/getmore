@@ -1,11 +1,10 @@
 import './App.scss';
-import { Banner } from './components/Banner';
-import bannerTop from './assets/images/home/banner/banner.webp';
+import { Home } from './pages/Home';
 
 function App() {
   return (
     <>
-      <Banner image={bannerTop} />
+      <Home />
     </>
   );
 }
