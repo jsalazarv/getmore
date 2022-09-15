@@ -1,0 +1,22 @@
+@import "src/styles/vars/colors/colors";
+
+.button {
+  height: 45px;
+  min-width: 92px;
+  padding: 0 35px;
+  background-color: $white;
+  font-weight: 600;
+  letter-spacing: .0892857143em;
+  text-transform: uppercase;
+  display: inline-flex;
+  flex: 0 0 auto;
+  vertical-align: middle;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  border-style: none;
+  border-radius: 28px;
+  &:hover {
+    opacity: 0.9;
+  }
+}
