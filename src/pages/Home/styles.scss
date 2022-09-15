@@ -2,29 +2,33 @@
 @import "src/styles/mixins/typography/_headlines.scss";
 
 .home {
-  .banner-top {
+  .home__title {
+    @include headline-4;
     color: $white;
-    .banner-top__title {
-      @include headline-4;
-    }
+  }
+  .home__button {
+    background-color: $primary;
+    color: $white;
+    margin-top: 2.5rem;
+  }
+  .banner-top {
     .banner-top__paragraph {
       @include headline-6;
+      color: $white;
     }
-   .banner-top__button {
-     background-color: $primary;
-     color: $white;
-     margin-top: 2.5rem;
-   }
+  }
+  .banner-bottom {
+    height: 50vh;
   }
 }
 
 @media (min-width: 992px) {
   .home {
+    .home__title {
+      @include headline-1;
+    }
     .banner-top {
-      height: 75vh;
-      .banner-top__title {
-        @include headline-1;
-      }
+      height: 80vh;
       .banner-top__paragraph {
         @include headline-6;
       }
