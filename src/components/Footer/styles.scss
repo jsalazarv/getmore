@@ -1,0 +1,68 @@
+@import "src/styles/vars/colors/colors";
+@import "src/styles/mixins/typography/_headlines.scss";
+
+.footer {
+  background-color: $secondary;
+  color: $secondary-dark;
+  text-align: center;
+  padding: 2rem 1rem;
+  .social-networks {
+    width: 100%;
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1rem;
+    .icon {
+      @include headline-5;
+    }
+  }
+  .rights-reserved a {
+    color: $secondary-dark;
+    &:active {
+      color: $secondary-dark;
+    }
+    &:visited {
+      color: $secondary-dark;
+    }
+  }
+  .footer-image {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer {
+    .footer-image {
+      display: block;
+      position: relative;
+      img {
+        position: absolute;
+        right: 1rem;
+        transform: translateY(-90%);
+        width: 5rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .footer {
+    padding: 5rem 1rem;
+    .social-networks {
+      column-gap: 1.5rem;
+      .icon {
+        @include headline-4;
+      }
+    }
+    .footer-image {
+      position: relative;
+      img {
+        position: absolute;
+        right: 3rem;
+        transform: translateY(-90%);
+        width: 6rem;
+      }
+    }
+  }
+}
