@@ -1,5 +1,6 @@
 import './styles.scss';
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import { PromotionalBar } from '../PromotionalBar/index.jsx';
 
 export const Navbar = () => {
   const [colorChange, setColorchange] = useState(false);
@@ -13,19 +14,22 @@ export const Navbar = () => {
   window.addEventListener('scroll', changeNavbarColor);
 
   return (
-    <nav className={colorChange ? 'navbar active' : 'navbar'}>
-      <ul className="menu">
-        <li className="menu-item">
-          <a className="item" href="#">
-            Productos
-          </a>
-        </li>
-        <li className="menu-item">
-          <a className="item" href="#">
-            Contacto
-          </a>
-        </li>
-      </ul>
-    </nav>
+    <>
+      <nav className={colorChange ? 'navbar active' : 'navbar'}>
+        <PromotionalBar />
+        <ul className="menu">
+          <li className="menu-item">
+            <a className="item" href="#">
+              Productos
+            </a>
+          </li>
+          <li className="menu-item">
+            <a className="item" href="#">
+              Contacto
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </>
   );
 };
