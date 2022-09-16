@@ -13,6 +13,7 @@ import accessories from '../../assets/images/home/Accessories.webp';
 import product1 from '../../assets/images/home/products/product1.webp';
 import product2 from '../../assets/images/home/products/product2.webp';
 import product3 from '../../assets/images/home/products/product3.webp';
+import product4 from '../../assets/images/home/products/product4.webp';
 
 export const Home = () => {
   const settings = {
@@ -53,17 +54,17 @@ export const Home = () => {
             />
             <Card
               image={product2}
-              description="Wilson Championship Extra Duty Tennis Balls, 3-pk"
+              description="Wilson Tour Slam Lite Tennis Racquet"
               price="$250.00"
             />
             <Card
               image={product3}
-              description="Wilson Championship Extra Duty Tennis Balls, 3-pk"
+              description="Wilson Starter 3 Balls"
               price="$250.00"
             />
             <Card
-              image={product3}
-              description="Wilson Championship Extra Duty Tennis Balls, 3-pk"
+              image={product4}
+              description="Nike Swoosh Wristbands"
               price="$250.00"
             />
           </Slider>
@@ -74,6 +75,31 @@ export const Home = () => {
         <Card image={rackets} title="RAQUETAS" />
         <Card image={balls} title="PELOTAS" />
         <Card image={accessories} title="ACCESORIOS" />
+      </div>
+      <div className="new-products">
+        <Card image={rackets} />
+        <div className="new-product-list">
+          <Card
+            image={product1}
+            description="Wilson Championship Extra Duty Tennis Balls, 3-pk"
+            price="$250.00"
+          />
+          <Card
+            image={product2}
+            description="Wilson Tour Slam Lite Tennis Racquet"
+            price="$250.00"
+          />
+          <Card
+            image={product3}
+            description="Wilson Starter 3 Balls"
+            price="$250.00"
+          />
+          <Card
+            image={product4}
+            description="Nike Swoosh Wristbands"
+            price="$250.00"
+          />
+        </div>
       </div>
       <Banner className="banner-bottom" image={bannerBottom}>
         <h1 className="home__title">DESCUBRE TU PASIÓN</h1>
