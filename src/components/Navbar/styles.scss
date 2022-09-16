@@ -1,0 +1,29 @@
+@import "src/styles/vars/colors/colors";
+
+.active {
+  background-color: $primary;
+}
+
+.navbar {
+  width: 100%;
+  position: fixed;
+  color: $white;
+  z-index: 1;
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+    list-style: none;
+    color: $white;
+    .menu-item .item {
+      color: $white;
+      text-decoration: none;
+      &:active {
+        color: $white;
+      }
+      &:visited {
+        color: $white;
+      }
+    }
+  }
+}
