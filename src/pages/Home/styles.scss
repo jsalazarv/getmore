@@ -17,6 +17,19 @@
       color: $white;
     }
   }
+  .categories {
+    .card {
+      width: 100%;
+      height: 20vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .card-title {
+        color: $white;
+        @include headline-5;
+      }
+    }
+  }
   .banner-bottom {
     height: 50vh;
   }
@@ -31,6 +44,18 @@
       height: 80vh;
       .banner-top__paragraph {
         @include headline-6;
+      }
+    }
+    .categories {
+      display: flex;
+      .card {
+        width: 33.3333%;
+        height: 75vh;
+        align-items: end;
+        padding-bottom: 2rem;
+        .card-title {
+          @include headline-4;
+        }
       }
     }
   }
